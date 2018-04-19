@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Developer: Frankie Barrios
+    Date:      4/1/2018
+    Purpose:   Registration Form Project
+-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Advising</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h2>Advising Appointment</h2>
+  <div class="container">
+    <form method="get" action="thankyou.html">
+      <fieldset class="input">
+        <legend>
+          Contact Information
+        </legend>
+
+        <label for="fName">
+          First Name:
+          <input autofocus id="fName" placeholder="First Name" required name="FNAME"/>
+        </label>
+        <label for="fLast">
+          Last Name:
+          <input id="fLast" placeholder="Last Name" name="FLast"/>
+        </label>
+        <label for="fEmail">
+          Email:
+          <input id="fEmail" placeholder="Email" name="FEmail"/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Reservation Request
+        </legend>
+        <select>
+          <option value="kirsten m">Kirsten Markley</option>
+          <option value="renee r">Renee Riley</option>
+          <option value="tiffany f">Tiffany Ford</option>
+        </select>
+        <select>
+          <option value= "January">January</option>
+          <option value= "February">February</option>
+          <option value= "March">March</option>
+          <option value= "April">April</option>
+          <option value= "May">May</option>
+          <option value= "June">June</option>
+          <option value= "July">Jule</option>
+          <option value= "August">August</option>
+          <option value= "September">September</option>
+          <option value= "October">October</option>
+          <option value= "November">November</option>
+          <option value= "December">December</option>
+        </select> Day
+        <input type="number" name="Day" min="1" max="31">
+
+        <input type="radio" name="AM" value="1" data-testid="" checked="">
+        <span class="a-radio-label">AM</span>
+        </input>
+        <input class="no-style" type="radio" name="AM" value="1" data-testid="">
+        <span class="a-radio-label">PM</span>
+        </input>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Classes You Want To Take Next Semester:
+        </legend>
+
+        <input type="checkbox" name="class" value="Java" checked> Java
+        <input type="checkbox" name="class" value="Web Dev"> Web Dev
+        <input type="checkbox" name="class" value="C#">C#
+        <input type="checkbox" name="class" value="Database">Database
+        <input type="checkbox" name="class" value="System Analysis and Design"> System Analysis and Design
+
+      </fieldset>
+      <fieldset>
+        <legend>
+          Additional Information
+        </legend>
+        <textarea rows="5" cols="50">
+        </textarea>
+      </fieldset>
+      </fieldset>
+      <input class="submit" type="submit" value="Submit" />
+    </form>
+
+
+  </div>
+
+</body>
+
+</html>
